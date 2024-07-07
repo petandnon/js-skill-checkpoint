@@ -8,3 +8,8 @@ const userTaskList = [
 ];
 
 // เริ่มเขียนโค้ดตรงนี้
+userTaskList.push({id:5 , task: "Walk the dog"}); 
+userTaskList.find(task => task.id === 4).task = "Go to the gym";
+userTaskList.pop();
+let lastTask = userTaskList.pop();
+console.log(`Task id: ${lastTask.id}, ${lastTask.task}`);
